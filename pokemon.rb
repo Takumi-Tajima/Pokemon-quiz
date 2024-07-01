@@ -1,5 +1,7 @@
 require 'csv'
 
+# APIからデータをとってくる関数を定義
+
 def load_pokemon_from_csv(file_path)
   pokemon_data = []
   CSV.foreach(file_path, headers: true).each_with_index do |row, _i|
